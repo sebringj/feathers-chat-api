@@ -1,8 +1,10 @@
-# feathers-chat-ts
+# Feathers Chat API
 
 [![CI](https://github.com/feathersjs/feathers-chat-ts/workflows/CI/badge.svg)](https://github.com/feathersjs/feathers-chat-ts/actions?query=workflow%3ACI)
 
-> A FeathersJS chat application written in TypeScript.
+> A FeathersJS chat application written in TypeScript but extended for active users rather than just boring users.
+
+The companion UI typescripted and hooked out is here https://github.com/sebringj/feathers-chat-ui .
 
 ## About
 
