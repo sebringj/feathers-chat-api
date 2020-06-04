@@ -2,9 +2,11 @@
 
 [![CI](https://github.com/feathersjs/feathers-chat-ts/workflows/CI/badge.svg)](https://github.com/feathersjs/feathers-chat-ts/actions?query=workflow%3ACI)
 
-> A FeathersJS chat application written in TypeScript
+> A FeathersJS chat application written in TypeScript.
 
 ## About
+
+This was cloned and then extended for "active users" so anonymous and signed in users could see active user counts participating.
 
 This project uses [Feathers](http://feathersjs.com), a framework for real-time applications and REST APIs. It contains the chat application created in [the Feathers guide](https://docs.feathersjs.com/guides/) using TypeScript and a frontend in plain JavaScript.
 
