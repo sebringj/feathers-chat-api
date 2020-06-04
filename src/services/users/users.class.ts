@@ -23,6 +23,7 @@ interface UserData {
   name?: string;
   avatar?: string;
   githubId?: string;
+  active: boolean;
 }
 
 export class Users extends Service<UserData> {
@@ -32,7 +33,7 @@ export class Users extends Service<UserData> {
 
   create (data: UserData, params?: Params) {
     // This is the information we want from the user signup data
-    const { email, password, githubId, name } = data;
+    const { email, password, githubId, name, active } = data;
     // Use the existing avatar image or return the Gravatar for the email
     const avatar = data.avatar || getGravatar(email);
     // The complete user
@@ -41,10 +42,12 @@ export class Users extends Service<UserData> {
       name,
       password,
       githubId,
-      avatar
+      avatar,
+      active
     };
 
     // Call the original `create` method with existing `params` and new data
     return super.create(userData, params);
   }
+
 }
